@@ -313,11 +313,11 @@ const CreateReplyRequestForm = React.memo(
                 horizontal: 'center',
               }}
             >
-              <ReportAbuseMenuItem
+              {/* <ReportAbuseMenuItem
                 itemType="article"
                 itemId={articleId}
                 userId={articleUserId}
-              />
+              /> */}
             </Menu>
           </Box>
         </CardContent>

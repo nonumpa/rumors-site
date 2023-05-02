@@ -85,13 +85,13 @@ const ReplyActions = ({ articleReply }) => {
           {articleReply.status === 'NORMAL' ? t`Delete` : t`Restore`}
         </MenuItem>
       )}
-      {canReportAbuse && (
+      {/* {canReportAbuse && (
         <ReportAbuseMenuItem
           itemId={articleReply.replyId}
           itemType="reply"
           userId={articleReply.userId}
         />
-      )}
+      )} */}
     </ActionMenu>
   );
 };

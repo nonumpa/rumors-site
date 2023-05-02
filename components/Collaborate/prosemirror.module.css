@@ -1,22 +1,3 @@
-#__next {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
-/* Replaced elements should get font settings from its parent */
-button, input {
-  font-family: inherit;
-  font-size: inherit;
-}
-
-/* Primary button should get white color */
-.MuiButton-containedPrimary.MuiButton-containedPrimary,
-.MuiFab-primary.MuiFab-primary {
-  color: #fff;
-}
-
 .ProseMirror {
   position: relative;
 }
@@ -346,5 +327,4 @@ li.ProseMirror-selectednode:after {
 }
 
 .ProseMirror p { margin-bottom: 1em }
-
 

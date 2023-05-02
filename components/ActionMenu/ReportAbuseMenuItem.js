@@ -35,16 +35,17 @@ function ReportAbuseMenuItem(props) {
 
   if (!canReportAbuse) return null;
 
-  return (
-    <a
-      className={classes.link}
-      href={getSpamReportUrl(props)}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <MenuItem>{t`Report abuse`}</MenuItem>
-    </a>
-  );
+  return <></>
+  // (
+  //   <a
+  //     className={classes.link}
+  //     href={getSpamReportUrl(props)}
+  //     target="_blank"
+  //     rel="noopener noreferrer"
+  //   >
+  //     <MenuItem>{t`Report abuse`}</MenuItem>
+  //   </a>
+  // );
 }
 
 export default ReportAbuseMenuItem;

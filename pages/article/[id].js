@@ -42,6 +42,7 @@ import TrendPlot from 'components/TrendPlot';
 import Infos, { TimeInfo } from 'components/Infos';
 import Thumbnail from 'components/Thumbnail';
 import AIReplySection from 'components/AIReplySection';
+import CollaborateEditor from 'components/Collaborate/prosemirror-versions';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -375,6 +376,7 @@ function ArticlePage() {
       </Head>
       <div className={classes.root}>
         <div className={classes.main}>
+          <CollaborateEditor articleId={article.id} />
           <Card>
             <header className={classes.textHeader}>
               <Ribbon className={classes.title}>
@@ -458,6 +460,8 @@ function ArticlePage() {
               </Box>
               <TrendPlot data={article.stats} />
             </CardContent>
+            {/* PROSEMIRROR EDITOR */}
+            {/* <CollaborateEditor /> */}
             {replyRequestsWithComments.length > 0 ? (
               <>
                 <CardHeader style={{ paddingTop: 0 }}>

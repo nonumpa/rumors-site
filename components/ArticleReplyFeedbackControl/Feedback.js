@@ -33,7 +33,7 @@ function Feedback({ feedback, articleId, replyId }) {
         <div className={classes.name}>{feedback.user?.name}</div>
         <div>{comment}</div>
       </Box>
-      {comment && canReportAbuse && (
+      {/* {comment && canReportAbuse && (
         <ActionMenu>
           <ReportAbuseMenuItem
             itemId={`${articleId},${replyId}`}
@@ -41,7 +41,7 @@ function Feedback({ feedback, articleId, replyId }) {
             userId={feedback.userId}
           />
         </ActionMenu>
-      )}
+      )} */}
     </div>
   );
 }

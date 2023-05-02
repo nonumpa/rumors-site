@@ -143,7 +143,7 @@ function ReplyRequestReason({ replyRequest, articleId }) {
           </Box>
         </Box>
       </Box>
-      {canReportAbuse && (
+      {/* {canReportAbuse && (
         <Box pl={2} alignSelf="flex-start">
           <ActionMenu>
             <ReportAbuseMenuItem
@@ -153,7 +153,7 @@ function ReplyRequestReason({ replyRequest, articleId }) {
             />
           </ActionMenu>
         </Box>
-      )}
+      )} */}
     </div>
   );
 }
