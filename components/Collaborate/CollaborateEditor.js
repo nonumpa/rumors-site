@@ -23,6 +23,7 @@ import { useState, useRef } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import useCurrentUser from 'lib/useCurrentUser';
 import cx from 'clsx';
+import PlaceholderPlugin from './Placeholder';
 
 const useStyles = makeStyles(theme => ({
   transcriptHeader: {
@@ -121,6 +122,7 @@ const CollaborateEditor = ({ article }) => {
               'Mod-y': redo,
               'Mod-Shift-z': redo,
             }),
+            PlaceholderPlugin('Input text'),
           ].concat(exampleSetup({ schema, menuBar: false })),
         }),
       })
